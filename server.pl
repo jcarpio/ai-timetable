@@ -20,7 +20,7 @@
    Tested with Scryer Prolog.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-:- load_files('req3.pl').
+:- load_files('req_pro.pl').
 
 :- use_module(library(clpfd)).
 :- use_module(library(persistency)).
@@ -77,9 +77,15 @@
 
 :- http_handler(/, say_hi, []).
 
+say_hi(_Request) :-
+        format('Content-type: text/html~n~n'),
+            format('<!DOCTYPE html>'),
+            format('<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">\n<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>\n<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>'),
+            format('<head></head><body>~n'),
+            format('<h1>AI Timetable</h1><h2><a href="aitt">Example</a></h2></body></html>~n').
 
 main :- 
-  http_server(http_dispatch, [port(8080)]),
+  http_server(http_dispatch, [port(3050)]),
   thread_get_message(quit).
 
 classes(Classes) :-
