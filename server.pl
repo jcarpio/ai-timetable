@@ -480,7 +480,8 @@ format_ingles([T|Ts], Rs):-
 server(Port) :-                                 % (2)
         http_server(http_dispatch, [port(Port)]).
 
-aitt(_Request) :-
+aitt(Request) :-
+    http_parameters(Request, [message(UserInput, [string])]),
     format('Content-type: text/html~n~n'),
     format('<!DOCTYPE html>'),
     format('<html><head>'),
@@ -502,6 +503,10 @@ aitt(_Request) :-
     </style>'),
     format('</head><body>'),
     format('<h1>AI Timetable</h1>'),
+    format('    <div class="container">~n', []),
+    format('        <h3>Input Data</h3>~n', []),
+    format('        <textarea readonly>~w</textarea>~n', [UserInput]),
+    format('    </div>~n', []),
     format('<div class="table-container">'),
     requirements_variables(Rs,Ralloc,Ringles, Vs),
     labeling([ff], Vs),
