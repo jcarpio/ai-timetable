@@ -20,7 +20,7 @@
    Tested with Scryer Prolog.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-:- load_files('req_pro.pl').
+:- load_files('req3.pl').
 
 :- use_module(library(clpfd)).
 :- use_module(library(persistency)).
@@ -85,7 +85,7 @@ say_hi(_Request) :-
             format('<h1>AI Timetable</h1><h2><a href="aitt">Example</a></h2></body></html>~n').
 
 main :- 
-  http_server(http_dispatch, [port(3050)]),
+  http_server(http_dispatch, [port(8080)]),
   thread_get_message(quit).
 
 classes(Classes) :-
