@@ -27,6 +27,7 @@
 :- use_module(library(reif)).
 :- use_module(library(http/thread_httpd)).
 :- use_module(library(http/http_dispatch)).
+:- use_module(library(http/http_server_files)).
 
 /*
 :- dynamic(class_subject_teacher_times/4).
@@ -75,17 +76,15 @@
    Labeling is performed on all slot variables.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-:- http_handler(/, say_hi, []).
+%% Asigna el handler de la raíz `/` para servir `index.html`
+:- http_handler(root(.), serve_homepage, []).
 
-say_hi(_Request) :-
-        format('Content-type: text/html~n~n'),
-            format('<!DOCTYPE html>'),
-            format('<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">\n<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>\n<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>'),
-            format('<head></head><body>~n'),
-            format('<h1>AI Timetable</h1><h2><a href="aitt">Example</a></h2></body></html>~n').
+%% Predicado para servir la página principal desde un archivo
+serve_homepage(Request) :-
+    http_reply_file('index.html', [], Request).
 
 main :- 
-  http_server(http_dispatch, [port(3050)]),
+  http_server(http_dispatch, [port(8080)]),
   thread_get_message(quit).
 
 classes(Classes) :-
