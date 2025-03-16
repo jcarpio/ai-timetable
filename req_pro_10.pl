@@ -67,7 +67,7 @@ class_subject_teacher_times('Inf2Turno_2Cua2', arquitectura_de_computadores, pro
 %########## CURSO 3 ################%
 
 class_subject_teacher_times('Inf3Turno_1Cua1', algoritmica_y_modelos_de_computacion, profesor_algoritmica_y_modelos_de_computacion, 2).
-class_subject_teacher_times('Inf3Turno_1Cua1', diseno_y_desarrollo_de_sistemas_de_informacion, profesor_diseno_y_desarrollo_de_sistemas_de_informacion, 2).
+class_subject_teacher_times('Inf3Turno_1Cua1', dis_sist, profesor_dis_sist, 2).
 class_subject_teacher_times('Inf3Turno_1Cua1', interconexion_de_redes_de_computadores, profesor_interconexion_de_redes_de_computadores, 2).
 class_subject_teacher_times('Inf3Turno_1Cua1', programacion_concurrente_y_distribuida, profesor_programacion_concurrente_y_distribuida, 2).
 class_subject_teacher_times('Inf3Turno_1Cua1', elaboracion_de_proyectos_informaticos, profesor_elaboracion_de_proyectos_informaticos, 2).
@@ -147,7 +147,7 @@ room_ingles(r1,'Inf1Turno_1Cua2',mat_ii,2).
 room_ingles(r1,'Inf1Turno_1Cua1',fun_comp,2).
 room_ingles(r1,'Inf1Turno_1Cua2',mat_iii,2).
 room_ingles(r1,'Inf2Turno_1Cua1',fundamentos_de_redes_de_computadores,2).
-room_ingles(r1,'Inf3Turno_1Cua1',diseno_y_desarrollo_de_sistemas_de_informacion,2).
+room_ingles(r1,'Inf3Turno_1Cua1',dis_sist,2).
 room_ingles(r1,'Inf3Turno_1Cua2',ingenieria_de_requisitos,2).
 room_ingles(r1,'Inf3Turno_1Cua2',representacion_del_conocimiento,2).
 room_ingles(r1,'Inf4Turno_1Cua1',aprendizaje_automatico,2).
