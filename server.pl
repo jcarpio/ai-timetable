@@ -28,6 +28,7 @@
 :- use_module(library(http/thread_httpd)).
 :- use_module(library(http/http_dispatch)).
 :- use_module(library(http/http_server_files)).
+:- use_module(library(http/http_parameters)).
 
 /*
 :- dynamic(class_subject_teacher_times/4).
