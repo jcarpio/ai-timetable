@@ -56,8 +56,8 @@ class_subject_teacher_times('Inf2Turno_2Cua1', dis_est_so, profesor_dis_est_so, 
 class_subject_teacher_times('Inf2Turno_1Cua1', dis_est_so, profesor_dis_est_so, 2).
 class_subject_teacher_times('Inf2Turno_2Cua2', est_dat_ii, profesor_est_dat_ii, 2).
 class_subject_teacher_times('Inf2Turno_1Cua2', est_dat_ii, profesor_est_dat_ii, 2).
-class_subject_teacher_times('Inf2Turno_1Cua2', principios_y_fundamentos_de_la_ingenieria_del_software, profesor_principios_y_fundamentos_de_la_ingenieria_del_software, 2).
-class_subject_teacher_times('Inf2Turno_2Cua2', principios_y_fundamentos_de_la_ingenieria_del_software, profesor_principios_y_fundamentos_de_la_ingenieria_del_software, 2).
+class_subject_teacher_times('Inf2Turno_1Cua2', pprin_ing_soft, profesor_pprin_ing_soft, 2).
+class_subject_teacher_times('Inf2Turno_2Cua2', pprin_ing_soft, profesor_pprin_ing_soft, 2).
 class_subject_teacher_times('Inf2Turno_2Cua2', inteligencia_artificial, profesor_inteligencia_artificial, 2).
 class_subject_teacher_times('Inf2Turno_1Cua2', inteligencia_artificial, profesor_inteligencia_artificial, 2).
 class_subject_teacher_times('Inf2Turno_1Cua2', arquitectura_de_computadores, profesor_arquitectura_de_computadores, 2).
