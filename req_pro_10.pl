@@ -32,10 +32,10 @@ class_subject_teacher_times('Inf1Turno_4Cua2', fun_alg, profesor_fun_alg, 2).
 class_subject_teacher_times('Inf1Turno_1Cua1', fun_comp, profesor_fun_comp, 2).
 class_subject_teacher_times('Inf1Turno_3Cua1', fun_comp, profesor_fun_comp, 2).
 class_subject_teacher_times('Inf1Turno_2Cua1', fun_comp, profesor_fun_comp, 2).
-class_subject_teacher_times('Inf1Turno_1Cua2', estructuras_de_datos_i, profesor_estructuras_de_datos_i, 2).
-class_subject_teacher_times('Inf1Turno_3Cua2', estructuras_de_datos_i, profesor_estructuras_de_datos_i, 2).
-class_subject_teacher_times('Inf1Turno_4Cua2', estructuras_de_datos_i, profesor_estructuras_de_datos_i, 2).
-class_subject_teacher_times('Inf1Turno_2Cua2', estructuras_de_datos_i, profesor_estructuras_de_datos_i, 2).
+class_subject_teacher_times('Inf1Turno_1Cua2', est_dat_i, profesor_est_dat_i, 2).
+class_subject_teacher_times('Inf1Turno_3Cua2', est_dat_i, profesor_est_dat_i, 2).
+class_subject_teacher_times('Inf1Turno_4Cua2', est_dat_i, profesor_est_dat_i, 2).
+class_subject_teacher_times('Inf1Turno_2Cua2', est_dat_i, profesor_est_dat_i, 2).
 class_subject_teacher_times('Inf1Turno_3Cua2', mat_iii, prof_mat_iii, 2).
 class_subject_teacher_times('Inf1Turno_1Cua2', mat_iii, prof_mat_iii, 2).
 class_subject_teacher_times('Inf1Turno_2Cua2', mat_iii, prof_mat_iii, 2).
@@ -54,8 +54,8 @@ class_subject_teacher_times('Inf2Turno_1Cua1', estructura_de_computadores, profe
 class_subject_teacher_times('Inf2Turno_2Cua1', estructura_de_computadores, profesor_estructura_de_computadores, 2).
 class_subject_teacher_times('Inf2Turno_2Cua1', diseno_y_estructura_de_los_sistemas_operativos, profesor_diseno_y_estructura_de_los_sistemas_operativos, 2).
 class_subject_teacher_times('Inf2Turno_1Cua1', diseno_y_estructura_de_los_sistemas_operativos, profesor_diseno_y_estructura_de_los_sistemas_operativos, 2).
-class_subject_teacher_times('Inf2Turno_2Cua2', estructuras_de_datos_ii, profesor_estructuras_de_datos_ii, 2).
-class_subject_teacher_times('Inf2Turno_1Cua2', estructuras_de_datos_ii, profesor_estructuras_de_datos_ii, 2).
+class_subject_teacher_times('Inf2Turno_2Cua2', est_dat_ii, profesor_est_dat_ii, 2).
+class_subject_teacher_times('Inf2Turno_1Cua2', est_dat_ii, profesor_est_dat_ii, 2).
 class_subject_teacher_times('Inf2Turno_1Cua2', principios_y_fundamentos_de_la_ingenieria_del_software, profesor_principios_y_fundamentos_de_la_ingenieria_del_software, 2).
 class_subject_teacher_times('Inf2Turno_2Cua2', principios_y_fundamentos_de_la_ingenieria_del_software, profesor_principios_y_fundamentos_de_la_ingenieria_del_software, 2).
 class_subject_teacher_times('Inf2Turno_2Cua2', inteligencia_artificial, profesor_inteligencia_artificial, 2).
