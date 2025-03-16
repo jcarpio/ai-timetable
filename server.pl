@@ -408,10 +408,13 @@ align_row(Row):-
             translate_row(Row, R2),
             format("<tr><td>~w</td><td>~w</td><td>~w</td><td>~w</td><td>~w</td></tr>\n", R2).
  
-weekdays_header():-                 
-            format('<div class="table-responsive">'),             
-            format('<table class="table"><tr><th>~w</th><th>~w</th><th>~w</th><th>~w</th><th>~w</th></tr>\n', ['Mon', 'Tue','Wed','Thu','Fri']).
-
+weekdays_header :-
+    format('<div class="table-responsive">'),
+    format('<table class="table table-bordered table-striped table-hover">'),
+    format('<thead style="background-color: #4CAF50; color: white; font-size: 18px;">'),  % Fondo verde y texto blanco
+    format('<tr><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr>'),
+    format('</thead><tbody>\n').
+    
 translate_row([], []).
 translate_row([subject(S)|Tail], [S|R]):-  
    translate_row(Tail, R).
