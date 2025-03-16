@@ -102,7 +102,7 @@ class_subject_teacher_times('Inf3Turno_1Cua2', sistemas_distribuidos, profesor_s
 %########## CURSO 4 ################%
 
 class_subject_teacher_times('Inf4Turno_1Cua1', integracion_de_la_informacion_y_aplicaciones, profesor_integracion_de_la_informacion_y_aplicaciones, 2).
-class_subject_teacher_times('Inf4Turno_1Cua1', calidad_medicion_y_estimacion_de_productos_y_procesos_software, profesor_calidad_medicion_y_estimacion_de_productos_y_procesos_software, 2).
+class_subject_teacher_times('Inf4Turno_1Cua1', calidad_soft, profesor_calidad_soft, 2).
 class_subject_teacher_times('Inf4Turno_1Cua2', mantenimiento_y_gestion_del_cambio_en_sistemas_software, profesor_mantenimiento_y_gestion_del_cambio_en_sistemas_software, 2).
 
 
