@@ -20,7 +20,7 @@
    Tested with Scryer Prolog.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-:- load_files('req3.pl').
+% :- load_files('req3.pl').
 
 :- use_module(library(clpfd)).
 :- use_module(library(persistency)).
@@ -484,28 +484,35 @@ server(Port) :-                                 % (2)
 
 % Parsea la entrada del usuario y la almacena en la base de conocimiento
 store_facts(UserInput) :-
-    split_string(UserInput, "\n", "\s\t\r", Lines), % Divide la entrada en líneas
-    maplist(trim_and_store, Lines).                 % Procesa cada línea
+    split_string(UserInput, "\r\n", '\r\n', R), 
+    maplist(process_line, R).                 % Procesa cada línea
 
-% Recorta espacios y almacena solo líneas no vacías
-trim_and_store(Line) :-
-    string_trim(Line, Trimmed),
-    Trimmed \= "",  % Evita líneas vacías
-    term_string(Term, Trimmed, [variable_names([])]), % Convierte en término Prolog
-    assertz(Term).  % Almacena el hecho en la base de datos
+process_line(Line) :-
+    trim_string(Line, Trimmed),   % Remove extra spaces
+    Trimmed \= "",                % Ignore empty lines
+    term_string(Term, Trimmed),   % Convert string to Prolog term
+    assertz(Term).               % Store term in dynamic database
+    % print(Term).
 
-% Recorta espacios en blanco al inicio y al final de la cadena
-string_trim(Input, Trimmed) :-
-    atom_string(Atom, Input),
-    atomic_list_concat(Split, ' ', Atom), % Divide en palabras eliminando espacios en exceso
-    atomic_list_concat(Split, ' ', TrimmedAtom),
-    atom_string(TrimmedAtom, Trimmed).
+% split_string/4: Type error: `character_code' expected, found `message='slots_per_week(35).\r\nslots_per_day(7).\r\nclass_subject_teacher_times(\'1a\', math, t1, 5).\>
+trim_string(String, Trimmed) :-
+    string_codes(String, Codes),
+    phrase(trim(Codes), TrimmedCodes),
+    string_codes(Trimmed, TrimmedCodes).
+
+trim([]) --> [].
+trim([C|Cs]) --> { char_type(C, space) }, !, trim(Cs).
+trim(Cs) --> trim_end(Cs).
+
+trim_end([]) --> [].
+trim_end([C|Cs]) --> [C], trim_end(Cs).
+trim_end([C]) --> { \+ char_type(C, space) }.
 
 aitt(Request) :-
    catch(
         (
           http_parameters(Request, [message(UserInput, [string])]),
-          % store_facts(UserInput), % Insertamos los hechos en la base de conocimiento
+          store_facts(UserInput), % Insertamos los hechos en la base de conocimiento
           format('Content-type: text/html~n~n'),
           format('<!DOCTYPE html>'),
           format('<html><head>'),
