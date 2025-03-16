@@ -46,8 +46,8 @@ class_subject_teacher_times('Inf1Turno_4Cua2', mat_iii, prof_mat_iii, 2).
 
 class_subject_teacher_times('Inf2Turno_2Cua1', metodologia_de_la_programacion, profesor_metodologia_de_la_programacion, 2).
 class_subject_teacher_times('Inf2Turno_1Cua1', metodologia_de_la_programacion, profesor_metodologia_de_la_programacion, 2).
-class_subject_teacher_times('Inf2Turno_1Cua1', bases_de_datos, profesor_bases_de_datos, 2).
-class_subject_teacher_times('Inf2Turno_2Cua1', bases_de_datos, profesor_bases_de_datos, 2).
+class_subject_teacher_times('Inf2Turno_1Cua1', bd, profesor_bd, 2).
+class_subject_teacher_times('Inf2Turno_2Cua1', bd, profesor_bd, 2).
 class_subject_teacher_times('Inf2Turno_1Cua1', fundamentos_de_redes_de_computadores, profesor_fundamentos_de_redes_de_computadores, 2).
 class_subject_teacher_times('Inf2Turno_2Cua1', fundamentos_de_redes_de_computadores, profesor_fundamentos_de_redes_de_computadores, 2).
 class_subject_teacher_times('Inf2Turno_1Cua1', estructura_de_computadores, profesor_estructura_de_computadores, 2).
@@ -87,7 +87,7 @@ class_subject_teacher_times('Inf4Turno_1Cua2', domotica, profesor_domotica, 2).
 class_subject_teacher_times('Inf4Turno_1Cua2', inteligencia_artificial_aplicada_a_robots, profesor_inteligencia_artificial_aplicada_a_robots, 2).
 class_subject_teacher_times('Inf4Turno_1Cua2', programacion_de_juegos, profesor_programacion_de_juegos, 2).
 class_subject_teacher_times('Inf4Turno_1Cua2', modelado_de_negocio, profesor_modelado_de_negocio, 2).
-class_subject_teacher_times('Inf4Turno_1Cua2', administracion_de_bases_de_datos, profesor_administracion_de_bases_de_datos, 2).
+class_subject_teacher_times('Inf4Turno_1Cua2', administracion_de_bd, profesor_administracion_de_bd, 2).
 
 
 %########## CURSO 3 ################%
