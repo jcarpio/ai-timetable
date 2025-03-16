@@ -48,8 +48,8 @@ class_subject_teacher_times('Inf2Turno_2Cua1', metodologia_de_la_programacion, p
 class_subject_teacher_times('Inf2Turno_1Cua1', metodologia_de_la_programacion, profesor_metodologia_de_la_programacion, 2).
 class_subject_teacher_times('Inf2Turno_1Cua1', bd, profesor_bd, 2).
 class_subject_teacher_times('Inf2Turno_2Cua1', bd, profesor_bd, 2).
-class_subject_teacher_times('Inf2Turno_1Cua1', fundamentos_de_redes_de_computadores, profesor_fundamentos_de_redes_de_computadores, 2).
-class_subject_teacher_times('Inf2Turno_2Cua1', fundamentos_de_redes_de_computadores, profesor_fundamentos_de_redes_de_computadores, 2).
+class_subject_teacher_times('Inf2Turno_1Cua1', fund_redes, profesor_fund_redes, 2).
+class_subject_teacher_times('Inf2Turno_2Cua1', fund_redes, profesor_fund_redes, 2).
 class_subject_teacher_times('Inf2Turno_1Cua1', est_comp, profesor_est_comp, 2).
 class_subject_teacher_times('Inf2Turno_2Cua1', est_comp, profesor_est_comp, 2).
 class_subject_teacher_times('Inf2Turno_2Cua1', dis_est_so, profesor_dis_est_so, 2).
@@ -146,7 +146,7 @@ room_ingles(r1,'Inf1Turno_1Cua1',adm_eco,2).
 room_ingles(r1,'Inf1Turno_1Cua2',mat_ii,2).
 room_ingles(r1,'Inf1Turno_1Cua1',fun_comp,2).
 room_ingles(r1,'Inf1Turno_1Cua2',mat_iii,2).
-room_ingles(r1,'Inf2Turno_1Cua1',fundamentos_de_redes_de_computadores,2).
+room_ingles(r1,'Inf2Turno_1Cua1',fund_redes,2).
 room_ingles(r1,'Inf3Turno_1Cua1',dis_sist,2).
 room_ingles(r1,'Inf3Turno_1Cua2',ingenieria_de_requisitos,2).
 room_ingles(r1,'Inf3Turno_1Cua2',representacion_del_conocimiento,2).
