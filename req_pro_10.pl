@@ -101,7 +101,7 @@ class_subject_teacher_times('Inf3Turno_1Cua2', sis_dist, profesor_sis_dist, 2).
 
 %########## CURSO 4 ################%
 
-class_subject_teacher_times('Inf4Turno_1Cua1', Int_aplic, profesor_Int_aplic, 2).
+class_subject_teacher_times('Inf4Turno_1Cua1', int_aplic, profesor_int_aplic, 2).
 class_subject_teacher_times('Inf4Turno_1Cua1', calidad_soft, profesor_calidad_soft, 2).
 class_subject_teacher_times('Inf4Turno_1Cua2', man_soft, profesor_man_soft, 2).
 
