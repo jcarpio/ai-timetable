@@ -75,28 +75,28 @@ class_subject_teacher_times('Inf3Turno_1Cua1', proy_inf, profesor_proy_inf, 2).
 
 %########## CURSO 4 ################%
 
-class_subject_teacher_times('Inf4Turno_1Cua1', redes_avanzadas, profesor_redes_avanzadas, 2).
+class_subject_teacher_times('Inf4Turno_1Cua1', reded_ava, profesor_reded_ava, 2).
 class_subject_teacher_times('Inf4Turno_1Cua1', robotica, profesor_robotica, 2).
-class_subject_teacher_times('Inf4Turno_1Cua1', vision_por_computador, profesor_vision_por_computador, 2).
-class_subject_teacher_times('Inf4Turno_1Cua1', mineria_de_datos, profesor_mineria_de_datos, 2).
+class_subject_teacher_times('Inf4Turno_1Cua1', vision_comp, profesor_vision_comp, 2).
+class_subject_teacher_times('Inf4Turno_1Cua1', min_dat, profesor_min_dat, 2).
 class_subject_teacher_times('Inf4Turno_1Cua1', proc_habla, profesor_proc_habla, 2).
 class_subject_teacher_times('Inf4Turno_1Cua1', anim_ord, profesor_anim_ord, 2).
 class_subject_teacher_times('Inf4Turno_1Cua1', des_web, profesor_des_web, 2).
-class_subject_teacher_times('Inf4Turno_1Cua1', motores_de_busqueda, profesor_motores_de_busqueda, 2).
+class_subject_teacher_times('Inf4Turno_1Cua1', mot_busq, profesor_mot_busq, 2).
 class_subject_teacher_times('Inf4Turno_1Cua2', domotica, profesor_domotica, 2).
-class_subject_teacher_times('Inf4Turno_1Cua2', ia_aplicada_a_robots, profesor_ia_aplicada_a_robots, 2).
-class_subject_teacher_times('Inf4Turno_1Cua2', programacion_de_juegos, profesor_programacion_de_juegos, 2).
-class_subject_teacher_times('Inf4Turno_1Cua2', modelado_de_negocio, profesor_modelado_de_negocio, 2).
-class_subject_teacher_times('Inf4Turno_1Cua2', administracion_de_bd, profesor_administracion_de_bd, 2).
+class_subject_teacher_times('Inf4Turno_1Cua2', ai_robots, profesor_ai_robots, 2).
+class_subject_teacher_times('Inf4Turno_1Cua2', prog_juegos, profesor_prog_juegos, 2).
+class_subject_teacher_times('Inf4Turno_1Cua2', mod_negoc, profesor_mod_negoc, 2).
+class_subject_teacher_times('Inf4Turno_1Cua2', adm_bd, profesor_adm_bd, 2).
 
 
 %########## CURSO 3 ################%
 
 class_subject_teacher_times('Inf3Turno_1Cua2', arq_sof_mod, profesor_arq_sof_mod, 2).
-class_subject_teacher_times('Inf3Turno_1Cua2', diseno_de_interfaces_de_usuario, profesor_diseno_de_interfaces_de_usuario, 2).
-class_subject_teacher_times('Inf3Turno_1Cua2', ingenieria_de_requisitos, profesor_ingenieria_de_requisitos, 2).
+class_subject_teacher_times('Inf3Turno_1Cua2', dis_iu, profesor_dis_iu, 2).
+class_subject_teacher_times('Inf3Turno_1Cua2', ing_req, profesor_ing_req, 2).
 class_subject_teacher_times('Inf3Turno_1Cua2', met_form_is, profesor_met_form_is, 2).
-class_subject_teacher_times('Inf3Turno_1Cua2', sistemas_distribuidos, profesor_sistemas_distribuidos, 2).
+class_subject_teacher_times('Inf3Turno_1Cua2', sis_dist, profesor_sis_dist, 2).
 
 
 %########## CURSO 4 ################%
@@ -124,9 +124,9 @@ class_subject_teacher_times('Inf4Turno_1Cua2', seg_si, profesor_seg_si, 2).
 
 %########## CURSO 3 ################%
 
-class_subject_teacher_times('Inf3Turno_1Cua2', sistemas_de_percepcion, profesor_sistemas_de_percepcion, 2).
+class_subject_teacher_times('Inf3Turno_1Cua2', sit_perc, profesor_sit_perc, 2).
 class_subject_teacher_times('Inf3Turno_1Cua2', realidad_virtual, profesor_realidad_virtual, 2).
-class_subject_teacher_times('Inf3Turno_1Cua2', sistemas_inteligentes, profesor_sistemas_inteligentes, 2).
+class_subject_teacher_times('Inf3Turno_1Cua2', sis_int, profesor_sis_int, 2).
 class_subject_teacher_times('Inf3Turno_1Cua2', proc_leng, profesor_proc_leng, 2).
 class_subject_teacher_times('Inf3Turno_1Cua2', rep_conoc, profesor_rep_conoc, 2).
 
@@ -148,7 +148,7 @@ room_ingles(r1,'Inf1Turno_1Cua1',fun_comp,2).
 room_ingles(r1,'Inf1Turno_1Cua2',mat_iii,2).
 room_ingles(r1,'Inf2Turno_1Cua1',fund_redes,2).
 room_ingles(r1,'Inf3Turno_1Cua1',dis_sist,2).
-room_ingles(r1,'Inf3Turno_1Cua2',ingenieria_de_requisitos,2).
+room_ingles(r1,'Inf3Turno_1Cua2',ing_req,2).
 room_ingles(r1,'Inf3Turno_1Cua2',rep_conoc,2).
 room_ingles(r1,'Inf4Turno_1Cua1',aprend_aut,2).
 room_ingles(r1,'Inf4Turno_1Cua2',bioinsp,2).
