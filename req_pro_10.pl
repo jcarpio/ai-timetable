@@ -5,26 +5,26 @@ slots_per_day(8).
 
 %########## CURSO 1 ################%
 
-class_subject_teacher_times('Inf1Turno_3Cua1', mat_i, profesor_mat_i, 2).
-class_subject_teacher_times('Inf1Turno_2Cua1', mat_i, profesor_mat_i, 2).
-class_subject_teacher_times('Inf1Turno_1Cua1', mat_i, profesor_mat_i, 2).
-class_subject_teacher_times('Inf1Turno_1Cua1', fisica, profesor_fisica, 2).
-class_subject_teacher_times('Inf1Turno_2Cua1', fisica, profesor_fisica, 2).
-class_subject_teacher_times('Inf1Turno_3Cua1', fisica, profesor_fisica, 2).
-class_subject_teacher_times('Inf1Turno_3Cua2', tecnologia_de_computadores, profesor_tecnologia_de_computadores, 2).
-class_subject_teacher_times('Inf1Turno_1Cua2', tecnologia_de_computadores, profesor_tecnologia_de_computadores, 2).
-class_subject_teacher_times('Inf1Turno_2Cua2', tecnologia_de_computadores, profesor_tecnologia_de_computadores, 2).
-class_subject_teacher_times('Inf1Turno_4Cua2', tecnologia_de_computadores, profesor_tecnologia_de_computadores, 2).
+class_subject_teacher_times('Inf1Turno_3Cua1', mat_i, prof_mat_i, 2).
+class_subject_teacher_times('Inf1Turno_2Cua1', mat_i, prof_mat_i, 2).
+class_subject_teacher_times('Inf1Turno_1Cua1', mat_i, prof_mat_i, 2).
+class_subject_teacher_times('Inf1Turno_1Cua1', fisica, prof_fis, 2).
+class_subject_teacher_times('Inf1Turno_2Cua1', fisica, prof_fis, 2).
+class_subject_teacher_times('Inf1Turno_3Cua1', fisica, prof_fis, 2).
+class_subject_teacher_times('Inf1Turno_3Cua2', tec_comp, profesor_tec_comp, 2).
+class_subject_teacher_times('Inf1Turno_1Cua2', tec_comp, profesor_tec_comp, 2).
+class_subject_teacher_times('Inf1Turno_2Cua2', tec_comp, profesor_tec_comp, 2).
+class_subject_teacher_times('Inf1Turno_4Cua2', tec_comp, profesor_tec_comp, 2).
 class_subject_teacher_times('Inf1Turno_3Cua1', fundamentos_de_programacion, profesor_fundamentos_de_programacion, 2).
 class_subject_teacher_times('Inf1Turno_1Cua1', fundamentos_de_programacion, profesor_fundamentos_de_programacion, 2).
 class_subject_teacher_times('Inf1Turno_2Cua1', fundamentos_de_programacion, profesor_fundamentos_de_programacion, 2).
 class_subject_teacher_times('Inf1Turno_3Cua1', administracion_y_economia_de_la_empresa, profesor_administracion_y_economia_de_la_empresa, 2).
 class_subject_teacher_times('Inf1Turno_1Cua1', administracion_y_economia_de_la_empresa, profesor_administracion_y_economia_de_la_empresa, 2).
 class_subject_teacher_times('Inf1Turno_2Cua1', administracion_y_economia_de_la_empresa, profesor_administracion_y_economia_de_la_empresa, 2).
-class_subject_teacher_times('Inf1Turno_4Cua2', mat_ii, profesor_mat_ii, 2).
-class_subject_teacher_times('Inf1Turno_2Cua2', mat_ii, profesor_mat_ii, 2).
-class_subject_teacher_times('Inf1Turno_1Cua2', mat_ii, profesor_mat_ii, 2).
-class_subject_teacher_times('Inf1Turno_3Cua2', mat_ii, profesor_mat_ii, 2).
+class_subject_teacher_times('Inf1Turno_4Cua2', mat_ii, prof_mat_ii, 2).
+class_subject_teacher_times('Inf1Turno_2Cua2', mat_ii, prof_mat_ii, 2).
+class_subject_teacher_times('Inf1Turno_1Cua2', mat_ii, prof_mat_ii, 2).
+class_subject_teacher_times('Inf1Turno_3Cua2', mat_ii, prof_mat_ii, 2).
 class_subject_teacher_times('Inf1Turno_2Cua2', fundamentos_de_analisis_de_algoritmos, profesor_fundamentos_de_analisis_de_algoritmos, 2).
 class_subject_teacher_times('Inf1Turno_3Cua2', fundamentos_de_analisis_de_algoritmos, profesor_fundamentos_de_analisis_de_algoritmos, 2).
 class_subject_teacher_times('Inf1Turno_1Cua2', fundamentos_de_analisis_de_algoritmos, profesor_fundamentos_de_analisis_de_algoritmos, 2).
@@ -36,10 +36,10 @@ class_subject_teacher_times('Inf1Turno_1Cua2', estructuras_de_datos_i, profesor_
 class_subject_teacher_times('Inf1Turno_3Cua2', estructuras_de_datos_i, profesor_estructuras_de_datos_i, 2).
 class_subject_teacher_times('Inf1Turno_4Cua2', estructuras_de_datos_i, profesor_estructuras_de_datos_i, 2).
 class_subject_teacher_times('Inf1Turno_2Cua2', estructuras_de_datos_i, profesor_estructuras_de_datos_i, 2).
-class_subject_teacher_times('Inf1Turno_3Cua2', mat_iii, profesor_mat_iii, 2).
-class_subject_teacher_times('Inf1Turno_1Cua2', mat_iii, profesor_mat_iii, 2).
-class_subject_teacher_times('Inf1Turno_2Cua2', mat_iii, profesor_mat_iii, 2).
-class_subject_teacher_times('Inf1Turno_4Cua2', mat_iii, profesor_mat_iii, 2).
+class_subject_teacher_times('Inf1Turno_3Cua2', mat_iii, prof_mat_iii, 2).
+class_subject_teacher_times('Inf1Turno_1Cua2', mat_iii, prof_mat_iii, 2).
+class_subject_teacher_times('Inf1Turno_2Cua2', mat_iii, prof_mat_iii, 2).
+class_subject_teacher_times('Inf1Turno_4Cua2', mat_iii, prof_mat_iii, 2).
 
 
 %########## CURSO 2 ################%
