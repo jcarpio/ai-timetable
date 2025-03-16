@@ -127,15 +127,15 @@ class_subject_teacher_times('Inf4Turno_1Cua2', seg_si, profesor_seg_si, 2).
 class_subject_teacher_times('Inf3Turno_1Cua2', sistemas_de_percepcion, profesor_sistemas_de_percepcion, 2).
 class_subject_teacher_times('Inf3Turno_1Cua2', realidad_virtual, profesor_realidad_virtual, 2).
 class_subject_teacher_times('Inf3Turno_1Cua2', sistemas_inteligentes, profesor_sistemas_inteligentes, 2).
-class_subject_teacher_times('Inf3Turno_1Cua2', procesadores_de_lenguajes, profesor_procesadores_de_lenguajes, 2).
-class_subject_teacher_times('Inf3Turno_1Cua2', representacion_del_conocimiento, profesor_representacion_del_conocimiento, 2).
+class_subject_teacher_times('Inf3Turno_1Cua2', proc_leng, profesor_proc_leng, 2).
+class_subject_teacher_times('Inf3Turno_1Cua2', rep_conoc, profesor_rep_conoc, 2).
 
 
 %########## CURSO 4 ################%
 
-class_subject_teacher_times('Inf4Turno_1Cua1', modelos_avanzados_de_computacion, profesor_modelos_avanzados_de_computacion, 2).
-class_subject_teacher_times('Inf4Turno_1Cua1', aprendizaje_automatico, profesor_aprendizaje_automatico, 2).
-class_subject_teacher_times('Inf4Turno_1Cua2', modelos_bioinspirados_y_heuristicas_de_busquedas, profesor_modelos_bioinspirados_y_heuristicas_de_busquedas, 2).
+class_subject_teacher_times('Inf4Turno_1Cua1', mac, profesor_mac, 2).
+class_subject_teacher_times('Inf4Turno_1Cua1', aprend_aut, profesor_aprend_aut, 2).
+class_subject_teacher_times('Inf4Turno_1Cua2', bioinsp, profesor_bioinsp, 2).
 
 
 
@@ -149,6 +149,6 @@ room_ingles(r1,'Inf1Turno_1Cua2',mat_iii,2).
 room_ingles(r1,'Inf2Turno_1Cua1',fund_redes,2).
 room_ingles(r1,'Inf3Turno_1Cua1',dis_sist,2).
 room_ingles(r1,'Inf3Turno_1Cua2',ingenieria_de_requisitos,2).
-room_ingles(r1,'Inf3Turno_1Cua2',representacion_del_conocimiento,2).
-room_ingles(r1,'Inf4Turno_1Cua1',aprendizaje_automatico,2).
-room_ingles(r1,'Inf4Turno_1Cua2',modelos_bioinspirados_y_heuristicas_de_busquedas,2).
+room_ingles(r1,'Inf3Turno_1Cua2',rep_conoc,2).
+room_ingles(r1,'Inf4Turno_1Cua1',aprend_aut,2).
+room_ingles(r1,'Inf4Turno_1Cua2',bioinsp,2).
