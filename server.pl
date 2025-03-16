@@ -20,7 +20,7 @@
    Tested with Scryer Prolog.
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-:- load_files('req_pro.pl').
+:- load_files('req3.pl').
 
 :- use_module(library(clpfd)).
 :- use_module(library(persistency)).
