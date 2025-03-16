@@ -15,9 +15,9 @@ class_subject_teacher_times('Inf1Turno_3Cua2', tec_comp, profesor_tec_comp, 2).
 class_subject_teacher_times('Inf1Turno_1Cua2', tec_comp, profesor_tec_comp, 2).
 class_subject_teacher_times('Inf1Turno_2Cua2', tec_comp, profesor_tec_comp, 2).
 class_subject_teacher_times('Inf1Turno_4Cua2', tec_comp, profesor_tec_comp, 2).
-class_subject_teacher_times('Inf1Turno_3Cua1', fundamentos_de_programacion, profesor_fundamentos_de_programacion, 2).
-class_subject_teacher_times('Inf1Turno_1Cua1', fundamentos_de_programacion, profesor_fundamentos_de_programacion, 2).
-class_subject_teacher_times('Inf1Turno_2Cua1', fundamentos_de_programacion, profesor_fundamentos_de_programacion, 2).
+class_subject_teacher_times('Inf1Turno_3Cua1', fun_prog, profesor_fun_prog, 2).
+class_subject_teacher_times('Inf1Turno_1Cua1', fun_prog, profesor_fun_prog, 2).
+class_subject_teacher_times('Inf1Turno_2Cua1', fun_prog, profesor_fun_prog, 2).
 class_subject_teacher_times('Inf1Turno_3Cua1', adm_eco, profesor_adm_eco, 2).
 class_subject_teacher_times('Inf1Turno_1Cua1', adm_eco, profesor_adm_eco, 2).
 class_subject_teacher_times('Inf1Turno_2Cua1', adm_eco, profesor_adm_eco, 2).
@@ -141,7 +141,7 @@ class_subject_teacher_times('Inf4Turno_1Cua2', modelos_bioinspirados_y_heuristic
 
 
 room_ingles(r1,'Inf1Turno_1Cua1',mat_i,2).
-room_ingles(r1,'Inf1Turno_1Cua1',fundamentos_de_programacion,2).
+room_ingles(r1,'Inf1Turno_1Cua1',fun_prog,2).
 room_ingles(r1,'Inf1Turno_1Cua1',adm_eco,2).
 room_ingles(r1,'Inf1Turno_1Cua2',mat_ii,2).
 room_ingles(r1,'Inf1Turno_1Cua1',fundamentos_de_computadores,2).
