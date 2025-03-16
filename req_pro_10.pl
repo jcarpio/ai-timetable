@@ -50,8 +50,8 @@ class_subject_teacher_times('Inf2Turno_1Cua1', bd, profesor_bd, 2).
 class_subject_teacher_times('Inf2Turno_2Cua1', bd, profesor_bd, 2).
 class_subject_teacher_times('Inf2Turno_1Cua1', fundamentos_de_redes_de_computadores, profesor_fundamentos_de_redes_de_computadores, 2).
 class_subject_teacher_times('Inf2Turno_2Cua1', fundamentos_de_redes_de_computadores, profesor_fundamentos_de_redes_de_computadores, 2).
-class_subject_teacher_times('Inf2Turno_1Cua1', estructura_de_computadores, profesor_estructura_de_computadores, 2).
-class_subject_teacher_times('Inf2Turno_2Cua1', estructura_de_computadores, profesor_estructura_de_computadores, 2).
+class_subject_teacher_times('Inf2Turno_1Cua1', est_comp, profesor_est_comp, 2).
+class_subject_teacher_times('Inf2Turno_2Cua1', est_comp, profesor_est_comp, 2).
 class_subject_teacher_times('Inf2Turno_2Cua1', dis_est_so, profesor_dis_est_so, 2).
 class_subject_teacher_times('Inf2Turno_1Cua1', dis_est_so, profesor_dis_est_so, 2).
 class_subject_teacher_times('Inf2Turno_2Cua2', est_dat_ii, profesor_est_dat_ii, 2).
