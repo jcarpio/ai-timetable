@@ -1,5 +1,5 @@
 <html>
-  <head><title>Constraint-based School Timetabling with Prolog</title>
+  <head><title>AI Timetable</title>
     <style>
 
       body { margin-left: 5%; }
@@ -42,7 +42,7 @@
 
   <body>
     <br><br>
-    <center><h1>Constraint-based School Timetabling with Prolog</h1></center>
+    <center><h1>AI Timetablew</h1></center>
     <br><br>
 
     <div class="headline"><i>Try it:</i></div>
@@ -84,98 +84,6 @@ class_subject_teacher_times('1a', lat, atvz1, 3).
 
     <br>
 
-    <div class="headline"><i>What it means:</i></div>
-
-    <div style="margin-left: 5%">
-
-      The input is a sequence of
-      Prolog <a href="/prolog/concepts#fact">facts</a> that describe
-      what we want from a solution.<br><br>
-
-      The <i>dimensions</i> of the timetable are specified by:
-
-      <ul>
-        
-        <li><b><tt>slots_per_week(W)</tt></b><br>
-          Each week has <tt>W</tt> time&nbsp;slots.</li>
-        
-        <li><b><tt>slots_per_day(D)</tt></b><br>
-          Each day has <tt>D</tt> time&nbsp;slots.</li>
-      </ul>
-
-      The main <i>requirements</i> are specified by:
-
-      <ul>
-        <li><b><tt>class_subject_teacher_times(C, S, P, T)</tt></b><br>
-        Class&nbsp;<tt>C</tt> must have subject&nbsp;<tt>S</tt>, taught
-        by person&nbsp;<tt>P</tt>, exactly <tt>T</tt>&nbsp;times
-          per&nbsp;week.</li>
-      </ul>
-
-      Additional requirements are specified by:
-
-      <ul>
-        <li><b><tt>class_freeslot(C, F)</tt></b><br>
-          No lesson must be scheduled at time <tt>F</tt> for
-          class&nbsp;<tt>C</tt>.
-        </li>
-        
-        <li><b><tt>coupling(C, S, L1, L2)</tt></b><br>
-
-          For class&nbsp;<tt>C</tt>, lessons&nbsp;<tt>L1</tt>
-          and&nbsp;<tt>L2</tt> of subject&nbsp;<tt>S</tt> are to be
-          scheduled <i>in direct succession</i>.
-        </li>
-
-        
-        <li><b><tt>teacher_freeday(T, D)</tt></b><br> For
-          teacher&nbsp;<tt>T</tt>, day&nbsp;<tt>D</tt> must be
-          kept <i>free</i>.
-        </li>
-
-        
-        <li><b><tt>room_alloc(R, C, S, L)</tt></b><br> Room <tt>R</tt>
-          is to be used for class&nbsp;<tt>C</tt> and
-          lesson&nbsp;<tt>L</tt> of subject&nbsp;<tt>S</tt>
-        </li>
-      </ul>
-
-    </div>
-
-    <div class="headline"><i>How it works:</i></div>
-
-    <br>
-    <div style="margin-left: 5%">
-    <table>
-      <tr>
-        <td>Watch the <b>video</b>:</td>
-        <td><a href="/prolog/videos/timetabling"><img src="../videos/t_timetabling.png" alt="Timetabling"></a>
-        </td>
-      </tr>
-    </table>
-    
-
-      <br><br>
-
-      The timetabling engine is freely available: <a href="/simsttab/">Simsttab</a> 
-
-      <br><br>
-
-      Simsttab uses <a href="/prolog/clpz">constraint logic
-      programming over integers</a> to find solutions that satisfy all
-      requirements.
-
-      <br><br>
-
-      More about Prolog: <a href="/prolog"><i><b>The Power of Prolog</b></i></a>
-
-    </div>
-
-    <br><br><br>
-
-    <a href="/">Main Page</a>
-
-    <br><br><br>
 
 <textarea id="example1" style="display: none">
 slots_per_week(35).
