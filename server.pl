@@ -481,42 +481,71 @@ format_ingles([T|Ts], Rs):-
 server(Port) :-                                 % (2)
         http_server(http_dispatch, [port(Port)]).
 
+
+% Parsea la entrada del usuario y la almacena en la base de conocimiento
+store_facts(UserInput) :-
+    split_string(UserInput, "\n", "\s\t\r", Lines), % Divide la entrada en líneas
+    maplist(trim_and_store, Lines).                 % Procesa cada línea
+
+% Recorta espacios y almacena solo líneas no vacías
+trim_and_store(Line) :-
+    string_trim(Line, Trimmed),
+    Trimmed \= "",  % Evita líneas vacías
+    term_string(Term, Trimmed, [variable_names([])]), % Convierte en término Prolog
+    assertz(Term).  % Almacena el hecho en la base de datos
+
+% Recorta espacios en blanco al inicio y al final de la cadena
+string_trim(Input, Trimmed) :-
+    atom_string(Atom, Input),
+    atomic_list_concat(Split, ' ', Atom), % Divide en palabras eliminando espacios en exceso
+    atomic_list_concat(Split, ' ', TrimmedAtom),
+    atom_string(TrimmedAtom, Trimmed).
+
 aitt(Request) :-
-    http_parameters(Request, [message(UserInput, [string])]),
-    format('Content-type: text/html~n~n'),
-    format('<!DOCTYPE html>'),
-    format('<html><head>'),
-    format('<meta charset="utf-8">'),
-    format('<meta name="viewport" content="width=device-width, initial-scale=1">'),
-    format('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">'),
-    format('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>'),
-    format('<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>'),
-    format('<style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        h1 { text-align: center; margin-bottom: 20px; }
-        .table-container { width: 80%%; margin: auto; }
-        .table thead { background-color: #4CAF50; color: white; }
-        .table tbody tr:nth-child(even) { background-color: #f2f2f2; }
-        .table tbody tr:hover { background-color: #ddd; }
-        td { text-align: center; font-weight: bold; padding: 10px; }
-        th { padding: 12px; text-align: center; }
-        .table-bordered th, .table-bordered td { border: 1px solid #ddd; }
-    </style>'),
-    format('</head><body>'),
-    format('<h1>AI Timetable</h1>'),
-    format('    <div class="container">~n', []),
-    format('        <h3>Input Data</h3>~n', []),
-    format('        <textarea readonly>~w</textarea>~n', [UserInput]),
-    format('    </div>~n', []),
-    format('<div class="table-container">'),
-    requirements_variables(Rs,Ralloc,Ringles, Vs),
-    labeling([ff], Vs),
-    print_classes(Rs,Ralloc),
-    print_teachers(Rs),
-    print_room(Ralloc),
-    print_ingles(Ringles),
-    format('</div>'),
-    format('</body></html>').
+   catch(
+        (
+          http_parameters(Request, [message(UserInput, [string])]),
+          % store_facts(UserInput), % Insertamos los hechos en la base de conocimiento
+          format('Content-type: text/html~n~n'),
+          format('<!DOCTYPE html>'),
+          format('<html><head>'),
+          format('<meta charset="utf-8">'),
+          format('<meta name="viewport" content="width=device-width, initial-scale=1">'),
+          format('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">'),
+          format('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>'),
+          format('<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>'),
+          format('<style>
+              body { font-family: Arial, sans-serif; margin: 20px; }
+              h1 { text-align: center; margin-bottom: 20px; }
+              .table-container { width: 80%%; margin: auto; }
+              .table thead { background-color: #4CAF50; color: white; }
+              .table tbody tr:nth-child(even) { background-color: #f2f2f2; }
+              .table tbody tr:hover { background-color: #ddd; }
+              td { text-align: center; font-weight: bold; padding: 10px; }
+              th { padding: 12px; text-align: center; }
+              .table-bordered th, .table-bordered td { border: 1px solid #ddd; }
+          </style>'),
+          format('</head><body>'),
+          format('<h1>AI Timetable</h1>'),
+          format('    <div class="container">~n', []),
+          format('        <h3>Input Data</h3>~n', []),
+          format('        <textarea readonly>~w</textarea>~n', [UserInput]),
+          format('    </div>~n', []),
+          format('<div class="table-container">'),
+          requirements_variables(Rs,Ralloc,Ringles, Vs),
+          labeling([ff], Vs),
+          print_classes(Rs,Ralloc),
+          print_teachers(Rs),
+          print_room(Ralloc),
+          print_ingles(Ringles),
+          format('</div>'),
+          format('</body></html>')
+      ),
+      Error,
+        (   format('Content-type: text/plain~n~n'),
+            format('Internal Server Error: ~w~n', [Error])
+        )
+    ).
             
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
    ?- server(8080).
