@@ -58,19 +58,19 @@ class_subject_teacher_times('Inf2Turno_2Cua2', est_dat_ii, profesor_est_dat_ii, 
 class_subject_teacher_times('Inf2Turno_1Cua2', est_dat_ii, profesor_est_dat_ii, 2).
 class_subject_teacher_times('Inf2Turno_1Cua2', pprin_ing_soft, profesor_pprin_ing_soft, 2).
 class_subject_teacher_times('Inf2Turno_2Cua2', pprin_ing_soft, profesor_pprin_ing_soft, 2).
-class_subject_teacher_times('Inf2Turno_2Cua2', inteligencia_artificial, profesor_inteligencia_artificial, 2).
-class_subject_teacher_times('Inf2Turno_1Cua2', inteligencia_artificial, profesor_inteligencia_artificial, 2).
-class_subject_teacher_times('Inf2Turno_1Cua2', arquitectura_de_computadores, profesor_arquitectura_de_computadores, 2).
-class_subject_teacher_times('Inf2Turno_2Cua2', arquitectura_de_computadores, profesor_arquitectura_de_computadores, 2).
+class_subject_teacher_times('Inf2Turno_2Cua2', ia, profesor_ia, 2).
+class_subject_teacher_times('Inf2Turno_1Cua2', ia, profesor_ia, 2).
+class_subject_teacher_times('Inf2Turno_1Cua2', arq_comp, profesor_arq_comp, 2).
+class_subject_teacher_times('Inf2Turno_2Cua2', arq_comp, profesor_arq_comp, 2).
 
 
 %########## CURSO 3 ################%
 
-class_subject_teacher_times('Inf3Turno_1Cua1', algoritmica_y_modelos_de_computacion, profesor_algoritmica_y_modelos_de_computacion, 2).
+class_subject_teacher_times('Inf3Turno_1Cua1', amc, profesor_amc, 2).
 class_subject_teacher_times('Inf3Turno_1Cua1', dis_sist, profesor_dis_sist, 2).
-class_subject_teacher_times('Inf3Turno_1Cua1', interconexion_de_redes_de_computadores, profesor_interconexion_de_redes_de_computadores, 2).
-class_subject_teacher_times('Inf3Turno_1Cua1', programacion_concurrente_y_distribuida, profesor_programacion_concurrente_y_distribuida, 2).
-class_subject_teacher_times('Inf3Turno_1Cua1', elaboracion_de_proyectos_informaticos, profesor_elaboracion_de_proyectos_informaticos, 2).
+class_subject_teacher_times('Inf3Turno_1Cua1', interc_redes, profesor_interc_redes, 2).
+class_subject_teacher_times('Inf3Turno_1Cua1', prog_concur, profesor_prog_concur, 2).
+class_subject_teacher_times('Inf3Turno_1Cua1', proy_inf, profesor_proy_inf, 2).
 
 
 %########## CURSO 4 ################%
@@ -79,12 +79,12 @@ class_subject_teacher_times('Inf4Turno_1Cua1', redes_avanzadas, profesor_redes_a
 class_subject_teacher_times('Inf4Turno_1Cua1', robotica, profesor_robotica, 2).
 class_subject_teacher_times('Inf4Turno_1Cua1', vision_por_computador, profesor_vision_por_computador, 2).
 class_subject_teacher_times('Inf4Turno_1Cua1', mineria_de_datos, profesor_mineria_de_datos, 2).
-class_subject_teacher_times('Inf4Turno_1Cua1', procesamiento_del_habla_vision_e_interaccion_multimodal, profesor_procesamiento_del_habla_vision_e_interaccion_multimodal, 2).
-class_subject_teacher_times('Inf4Turno_1Cua1', animacion_por_ordenador, profesor_animacion_por_ordenador, 2).
-class_subject_teacher_times('Inf4Turno_1Cua1', desarrollo_de_aplicaciones_web, profesor_desarrollo_de_aplicaciones_web, 2).
+class_subject_teacher_times('Inf4Turno_1Cua1', proc_habla, profesor_proc_habla, 2).
+class_subject_teacher_times('Inf4Turno_1Cua1', anim_ord, profesor_anim_ord, 2).
+class_subject_teacher_times('Inf4Turno_1Cua1', des_web, profesor_des_web, 2).
 class_subject_teacher_times('Inf4Turno_1Cua1', motores_de_busqueda, profesor_motores_de_busqueda, 2).
 class_subject_teacher_times('Inf4Turno_1Cua2', domotica, profesor_domotica, 2).
-class_subject_teacher_times('Inf4Turno_1Cua2', inteligencia_artificial_aplicada_a_robots, profesor_inteligencia_artificial_aplicada_a_robots, 2).
+class_subject_teacher_times('Inf4Turno_1Cua2', ia_aplicada_a_robots, profesor_ia_aplicada_a_robots, 2).
 class_subject_teacher_times('Inf4Turno_1Cua2', programacion_de_juegos, profesor_programacion_de_juegos, 2).
 class_subject_teacher_times('Inf4Turno_1Cua2', modelado_de_negocio, profesor_modelado_de_negocio, 2).
 class_subject_teacher_times('Inf4Turno_1Cua2', administracion_de_bd, profesor_administracion_de_bd, 2).
@@ -92,34 +92,34 @@ class_subject_teacher_times('Inf4Turno_1Cua2', administracion_de_bd, profesor_ad
 
 %########## CURSO 3 ################%
 
-class_subject_teacher_times('Inf3Turno_1Cua2', arquitectura_del_software_dirigida_por_modelos, profesor_arquitectura_del_software_dirigida_por_modelos, 2).
+class_subject_teacher_times('Inf3Turno_1Cua2', arq_sof_mod, profesor_arq_sof_mod, 2).
 class_subject_teacher_times('Inf3Turno_1Cua2', diseno_de_interfaces_de_usuario, profesor_diseno_de_interfaces_de_usuario, 2).
 class_subject_teacher_times('Inf3Turno_1Cua2', ingenieria_de_requisitos, profesor_ingenieria_de_requisitos, 2).
-class_subject_teacher_times('Inf3Turno_1Cua2', metodos_formales_en_ingenieria_de_software, profesor_metodos_formales_en_ingenieria_de_software, 2).
+class_subject_teacher_times('Inf3Turno_1Cua2', met_form_is, profesor_met_form_is, 2).
 class_subject_teacher_times('Inf3Turno_1Cua2', sistemas_distribuidos, profesor_sistemas_distribuidos, 2).
 
 
 %########## CURSO 4 ################%
 
-class_subject_teacher_times('Inf4Turno_1Cua1', integracion_de_la_informacion_y_aplicaciones, profesor_integracion_de_la_informacion_y_aplicaciones, 2).
+class_subject_teacher_times('Inf4Turno_1Cua1', Int_aplic, profesor_Int_aplic, 2).
 class_subject_teacher_times('Inf4Turno_1Cua1', calidad_soft, profesor_calidad_soft, 2).
-class_subject_teacher_times('Inf4Turno_1Cua2', mantenimiento_y_gestion_del_cambio_en_sistemas_software, profesor_mantenimiento_y_gestion_del_cambio_en_sistemas_software, 2).
+class_subject_teacher_times('Inf4Turno_1Cua2', man_soft, profesor_man_soft, 2).
 
 
 %########## CURSO 3 ################%
 
-class_subject_teacher_times('Inf3Turno_1Cua2', computadores_comerciales, profesor_computadores_comerciales, 2).
-class_subject_teacher_times('Inf3Turno_1Cua2', diseno_de_sistemas_hardware-software, profesor_diseno_de_sistemas_hardware-software, 2).
-class_subject_teacher_times('Inf3Turno_1Cua2', sistemas_computadores_de_altas_prestaciones, profesor_sistemas_computadores_de_altas_prestaciones, 2).
-class_subject_teacher_times('Inf3Turno_1Cua2', sistemas_programables, profesor_sistemas_programables, 2).
-class_subject_teacher_times('Inf3Turno_1Cua2', administracion_y_gestion_de_redes_de_computadores, profesor_administracion_y_gestion_de_redes_de_computadores, 2).
+class_subject_teacher_times('Inf3Turno_1Cua2', comp_com, profesor_comp_com, 2).
+class_subject_teacher_times('Inf3Turno_1Cua2', dis_hard_soft, profesor_dis_hard_soft, 2).
+class_subject_teacher_times('Inf3Turno_1Cua2', sist_alt_pres, profesor_sist_alt_pres, 2).
+class_subject_teacher_times('Inf3Turno_1Cua2', sist_prog, profesor_sist_prog, 2).
+class_subject_teacher_times('Inf3Turno_1Cua2', adm_redes, profesor_adm_redes, 2).
 
 
 %########## CURSO 4 ################%
 
-class_subject_teacher_times('Inf4Turno_1Cua1', sistemas_de_tiempo_real, profesor_sistemas_de_tiempo_real, 2).
-class_subject_teacher_times('Inf4Turno_1Cua1', administracion_de_servidores, profesor_administracion_de_servidores, 2).
-class_subject_teacher_times('Inf4Turno_1Cua2', seguridad_de_sistemas_informaticos, profesor_seguridad_de_sistemas_informaticos, 2).
+class_subject_teacher_times('Inf4Turno_1Cua1', sit_t_real, profesor_sit_t_real, 2).
+class_subject_teacher_times('Inf4Turno_1Cua1', adm_serv, profesor_adm_serv, 2).
+class_subject_teacher_times('Inf4Turno_1Cua2', seg_si, profesor_seg_si, 2).
 
 
 %########## CURSO 3 ################%
