@@ -5,9 +5,9 @@ slots_per_day(8).
 
 %########## CURSO 1 ################%
 
-class_subject_teacher_times('Inf1Turno_3Cua1', matematicas_i, profesor_matematicas_i, 2).
-class_subject_teacher_times('Inf1Turno_2Cua1', matematicas_i, profesor_matematicas_i, 2).
-class_subject_teacher_times('Inf1Turno_1Cua1', matematicas_i, profesor_matematicas_i, 2).
+class_subject_teacher_times('Inf1Turno_3Cua1', mat_i, profesor_mat_i, 2).
+class_subject_teacher_times('Inf1Turno_2Cua1', mat_i, profesor_mat_i, 2).
+class_subject_teacher_times('Inf1Turno_1Cua1', mat_i, profesor_mat_i, 2).
 class_subject_teacher_times('Inf1Turno_1Cua1', fisica, profesor_fisica, 2).
 class_subject_teacher_times('Inf1Turno_2Cua1', fisica, profesor_fisica, 2).
 class_subject_teacher_times('Inf1Turno_3Cua1', fisica, profesor_fisica, 2).
@@ -21,10 +21,10 @@ class_subject_teacher_times('Inf1Turno_2Cua1', fundamentos_de_programacion, prof
 class_subject_teacher_times('Inf1Turno_3Cua1', administracion_y_economia_de_la_empresa, profesor_administracion_y_economia_de_la_empresa, 2).
 class_subject_teacher_times('Inf1Turno_1Cua1', administracion_y_economia_de_la_empresa, profesor_administracion_y_economia_de_la_empresa, 2).
 class_subject_teacher_times('Inf1Turno_2Cua1', administracion_y_economia_de_la_empresa, profesor_administracion_y_economia_de_la_empresa, 2).
-class_subject_teacher_times('Inf1Turno_4Cua2', matematicas_ii, profesor_matematicas_ii, 2).
-class_subject_teacher_times('Inf1Turno_2Cua2', matematicas_ii, profesor_matematicas_ii, 2).
-class_subject_teacher_times('Inf1Turno_1Cua2', matematicas_ii, profesor_matematicas_ii, 2).
-class_subject_teacher_times('Inf1Turno_3Cua2', matematicas_ii, profesor_matematicas_ii, 2).
+class_subject_teacher_times('Inf1Turno_4Cua2', mat_ii, profesor_mat_ii, 2).
+class_subject_teacher_times('Inf1Turno_2Cua2', mat_ii, profesor_mat_ii, 2).
+class_subject_teacher_times('Inf1Turno_1Cua2', mat_ii, profesor_mat_ii, 2).
+class_subject_teacher_times('Inf1Turno_3Cua2', mat_ii, profesor_mat_ii, 2).
 class_subject_teacher_times('Inf1Turno_2Cua2', fundamentos_de_analisis_de_algoritmos, profesor_fundamentos_de_analisis_de_algoritmos, 2).
 class_subject_teacher_times('Inf1Turno_3Cua2', fundamentos_de_analisis_de_algoritmos, profesor_fundamentos_de_analisis_de_algoritmos, 2).
 class_subject_teacher_times('Inf1Turno_1Cua2', fundamentos_de_analisis_de_algoritmos, profesor_fundamentos_de_analisis_de_algoritmos, 2).
@@ -36,10 +36,10 @@ class_subject_teacher_times('Inf1Turno_1Cua2', estructuras_de_datos_i, profesor_
 class_subject_teacher_times('Inf1Turno_3Cua2', estructuras_de_datos_i, profesor_estructuras_de_datos_i, 2).
 class_subject_teacher_times('Inf1Turno_4Cua2', estructuras_de_datos_i, profesor_estructuras_de_datos_i, 2).
 class_subject_teacher_times('Inf1Turno_2Cua2', estructuras_de_datos_i, profesor_estructuras_de_datos_i, 2).
-class_subject_teacher_times('Inf1Turno_3Cua2', matematicas_iii, profesor_matematicas_iii, 2).
-class_subject_teacher_times('Inf1Turno_1Cua2', matematicas_iii, profesor_matematicas_iii, 2).
-class_subject_teacher_times('Inf1Turno_2Cua2', matematicas_iii, profesor_matematicas_iii, 2).
-class_subject_teacher_times('Inf1Turno_4Cua2', matematicas_iii, profesor_matematicas_iii, 2).
+class_subject_teacher_times('Inf1Turno_3Cua2', mat_iii, profesor_mat_iii, 2).
+class_subject_teacher_times('Inf1Turno_1Cua2', mat_iii, profesor_mat_iii, 2).
+class_subject_teacher_times('Inf1Turno_2Cua2', mat_iii, profesor_mat_iii, 2).
+class_subject_teacher_times('Inf1Turno_4Cua2', mat_iii, profesor_mat_iii, 2).
 
 
 %########## CURSO 2 ################%
@@ -140,12 +140,12 @@ class_subject_teacher_times('Inf4Turno_1Cua2', modelos_bioinspirados_y_heuristic
 
 
 
-room_ingles(r1,'Inf1Turno_1Cua1',matematicas_i,2).
+room_ingles(r1,'Inf1Turno_1Cua1',mat_i,2).
 room_ingles(r1,'Inf1Turno_1Cua1',fundamentos_de_programacion,2).
 room_ingles(r1,'Inf1Turno_1Cua1',administracion_y_economia_de_la_empresa,2).
-room_ingles(r1,'Inf1Turno_1Cua2',matematicas_ii,2).
+room_ingles(r1,'Inf1Turno_1Cua2',mat_ii,2).
 room_ingles(r1,'Inf1Turno_1Cua1',fundamentos_de_computadores,2).
-room_ingles(r1,'Inf1Turno_1Cua2',matematicas_iii,2).
+room_ingles(r1,'Inf1Turno_1Cua2',mat_iii,2).
 room_ingles(r1,'Inf2Turno_1Cua1',fundamentos_de_redes_de_computadores,2).
 room_ingles(r1,'Inf3Turno_1Cua1',diseno_y_desarrollo_de_sistemas_de_informacion,2).
 room_ingles(r1,'Inf3Turno_1Cua2',ingenieria_de_requisitos,2).
