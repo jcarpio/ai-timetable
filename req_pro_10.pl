@@ -25,10 +25,10 @@ class_subject_teacher_times('Inf1Turno_4Cua2', mat_ii, prof_mat_ii, 2).
 class_subject_teacher_times('Inf1Turno_2Cua2', mat_ii, prof_mat_ii, 2).
 class_subject_teacher_times('Inf1Turno_1Cua2', mat_ii, prof_mat_ii, 2).
 class_subject_teacher_times('Inf1Turno_3Cua2', mat_ii, prof_mat_ii, 2).
-class_subject_teacher_times('Inf1Turno_2Cua2', fundamentos_de_analisis_de_algoritmos, profesor_fundamentos_de_analisis_de_algoritmos, 2).
-class_subject_teacher_times('Inf1Turno_3Cua2', fundamentos_de_analisis_de_algoritmos, profesor_fundamentos_de_analisis_de_algoritmos, 2).
-class_subject_teacher_times('Inf1Turno_1Cua2', fundamentos_de_analisis_de_algoritmos, profesor_fundamentos_de_analisis_de_algoritmos, 2).
-class_subject_teacher_times('Inf1Turno_4Cua2', fundamentos_de_analisis_de_algoritmos, profesor_fundamentos_de_analisis_de_algoritmos, 2).
+class_subject_teacher_times('Inf1Turno_2Cua2', fun_alg, profesor_fun_alg, 2).
+class_subject_teacher_times('Inf1Turno_3Cua2', fun_alg, profesor_fun_alg, 2).
+class_subject_teacher_times('Inf1Turno_1Cua2', fun_alg, profesor_fun_alg, 2).
+class_subject_teacher_times('Inf1Turno_4Cua2', fun_alg, profesor_fun_alg, 2).
 class_subject_teacher_times('Inf1Turno_1Cua1', fundamentos_de_computadores, profesor_fundamentos_de_computadores, 2).
 class_subject_teacher_times('Inf1Turno_3Cua1', fundamentos_de_computadores, profesor_fundamentos_de_computadores, 2).
 class_subject_teacher_times('Inf1Turno_2Cua1', fundamentos_de_computadores, profesor_fundamentos_de_computadores, 2).
