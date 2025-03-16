@@ -78,11 +78,38 @@
 :- http_handler(/, say_hi, []).
 
 say_hi(_Request) :-
-        format('Content-type: text/html~n~n'),
-            format('<!DOCTYPE html>'),
-            format('<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">\n<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>\n<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>'),
-            format('<head></head><body>~n'),
-            format('<h1>AI Timetable</h1><h2><a href="aitt">Example</a></h2></body></html>~n').
+    format('Content-type: text/html~n~n'),
+    format('<!DOCTYPE html>'),
+    format('<html><head>'),
+    format('<title>AI Timetable Generator</title>'),
+    format('<meta charset="utf-8">'),
+    format('<meta name="viewport" content="width=device-width, initial-scale=1">'),
+    format('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">'),
+    format('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>'),
+    format('<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>'),
+    format('<style>'),
+    format('body { margin-left: 5%%; margin-right: 5%%; }'),
+    format('input[type="submit"] { font-size: 20pt; background-color: lightblue; border-radius: 10pt; padding: 10px; }'),
+    format('</style>'),
+    format('</head><body>'),
+
+    format('<div class="container">'),
+    format('<h1 class="text-center">Constraint-based School Timetabling with Prolog</h1><br>'),
+
+    % Form for input data
+    format('<div class="headline"><i>Enter timetable constraints:</i></div><br>'),
+    format('<form action="/generate" method="post">'),
+    format('<textarea name="message" id="constraints" rows="10" cols="80" style="font-family: courier; font-size: 12pt; border: 3px solid black; font-weight: bold">'>
+    format('slots_per_week(35).\n'),
+    format('slots_per_day(7).\n'),
+    format('class_subject_teacher_times(\'1a\', math, t1, 5).\n'),
+    format('class_subject_teacher_times(\'1a\', physics, t2, 3).\n'),
+    format('</textarea><br><br>'),
+    format('<input type="submit" value="Generate Timetable">'),
+    format('</form>'),
+    
+    format('</div>'),
+    format('</body></html>').
 
 main :- 
   http_server(http_dispatch, [port(8080)]),
