@@ -44,8 +44,8 @@ class_subject_teacher_times('Inf1Turno_4Cua2', mat_iii, prof_mat_iii, 2).
 
 %########## CURSO 2 ################%
 
-class_subject_teacher_times('Inf2Turno_2Cua1', metodologia_de_la_programacion, profesor_metodologia_de_la_programacion, 2).
-class_subject_teacher_times('Inf2Turno_1Cua1', metodologia_de_la_programacion, profesor_metodologia_de_la_programacion, 2).
+class_subject_teacher_times('Inf2Turno_2Cua1', met_prog, profesor_met_prog, 2).
+class_subject_teacher_times('Inf2Turno_1Cua1', met_prog, profesor_met_prog, 2).
 class_subject_teacher_times('Inf2Turno_1Cua1', bd, profesor_bd, 2).
 class_subject_teacher_times('Inf2Turno_2Cua1', bd, profesor_bd, 2).
 class_subject_teacher_times('Inf2Turno_1Cua1', fund_redes, profesor_fund_redes, 2).
