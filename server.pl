@@ -477,19 +477,37 @@ format_ingles([T|Ts], Rs):-
 server(Port) :-                                 % (2)
         http_server(http_dispatch, [port(Port)]).
 
-aitt(_Request) :-                         % (3)
-        format('Content-type: text/html~n~n'),
-            format('<!DOCTYPE html>'),
-            format('<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">\n<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>\n<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>'),
-            format('<head></head><body>~n'),
-            format('<h1>AI Timetable</h1>~n'),
-            requirements_variables(Rs,Ralloc,Ringles, Vs),
-            labeling([ff], Vs),
-            print_classes(Rs,Ralloc),
-            print_teachers(Rs),
-			print_room(Ralloc),
-			print_ingles(Ringles),
-            format('</body>~n').          
+aitt(_Request) :-
+    format('Content-type: text/html~n~n'),
+    format('<!DOCTYPE html>'),
+    format('<html><head>'),
+    format('<meta charset="utf-8">'),
+    format('<meta name="viewport" content="width=device-width, initial-scale=1">'),
+    format('<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">'),
+    format('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>'),
+    format('<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>'),
+    format('<style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { text-align: center; margin-bottom: 20px; }
+        .table-container { width: 80%%; margin: auto; }
+        .table thead { background-color: #4CAF50; color: white; }
+        .table tbody tr:nth-child(even) { background-color: #f2f2f2; }
+        .table tbody tr:hover { background-color: #ddd; }
+        td { text-align: center; font-weight: bold; padding: 10px; }
+        th { padding: 12px; text-align: center; }
+        .table-bordered th, .table-bordered td { border: 1px solid #ddd; }
+    </style>'),
+    format('</head><body>'),
+    format('<h1>AI Timetable</h1>'),
+    format('<div class="table-container">'),
+    requirements_variables(Rs,Ralloc,Ringles, Vs),
+    labeling([ff], Vs),
+    print_classes(Rs,Ralloc),
+    print_teachers(Rs),
+    print_room(Ralloc),
+    print_ingles(Ringles),
+    format('</div>'),
+    format('</body></html>').
             
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
    ?- server(8080).
