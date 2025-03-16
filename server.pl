@@ -508,9 +508,21 @@ trim_end([]) --> [].
 trim_end([C|Cs]) --> [C], trim_end(Cs).
 trim_end([C]) --> { \+ char_type(C, space) }.
 
+reset_database :-
+    retractall(class_subject_teacher_times(_, _, _, _)),
+    retractall(room_ingles(_, _, _, _)),
+    retractall(coupling(_, _, _, _)),
+    retractall(teacher_freeday(_, _)),
+    retractall(slots_per_day(_)),
+    retractall(slots_couplings(_, _)),
+    retractall(slots_per_week(_)),
+    retractall(class_freeslot(_, _)),
+    retractall(room_alloc(_, _, _, _)).
+
 aitt(Request) :-
    catch(
         (
+          reset_database,
           http_parameters(Request, [message(UserInput, [string])]),
           store_facts(UserInput), % Insertamos los hechos en la base de conocimiento
           format('Content-type: text/html~n~n'),
@@ -534,10 +546,10 @@ aitt(Request) :-
           </style>'),
           format('</head><body>'),
           format('<h1>AI Timetable</h1>'),
-          format('    <div class="container">~n', []),
-          format('        <h3>Input Data</h3>~n', []),
-          format('        <textarea readonly>~w</textarea>~n', [UserInput]),
-          format('    </div>~n', []),
+          % format('    <div class="container">~n', []),
+          % format('        <h3>Input Data</h3>~n', []),
+          % format('        <textarea readonly>~w</textarea>~n', [UserInput]),
+          % format('    </div>~n', []),
           format('<div class="table-container">'),
           requirements_variables(Rs,Ralloc,Ringles, Vs),
           labeling([ff], Vs),
